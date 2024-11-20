@@ -5,7 +5,7 @@
 
 ## Install
 
-  ```
+  ```bash
   git clone gitlab.com/tokend/firebase-rarimo-notificator
   cd firebase-rarimo-notificator
   go build main.go
@@ -18,7 +18,7 @@
 We do use openapi:json standard for API. We use swagger for documenting our API.
 
 To open online documentation, go to [swagger editor](http://localhost:8080/swagger-editor/) here is how you can start it
-```
+```bash
   cd docs
   npm install
   npm start
@@ -38,7 +38,7 @@ Make sure that docker installed.
 
 use `docker run ` with `-p 8080:80` to expose port 80 to 8080
 
-  ```
+  ```bash
   docker build -t gitlab.com/tokend/firebase-rarimo-notificator .
   docker run -e KV_VIPER_FILE=/config.yaml gitlab.com/tokend/firebase-rarimo-notificator
   ```

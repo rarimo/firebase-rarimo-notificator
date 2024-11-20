@@ -1,9 +1,8 @@
-FROM golang:1.20-alpine as buildbase
+FROM golang:1.20.3-alpine as buildbase
 
 RUN apk add git build-base
 
 WORKDIR /go/src/gitlab.com/tokend/firebase-rarimo-notificator
-COPY vendor .
 COPY . .
 
 RUN GOOS=linux go build  -o /usr/local/bin/firebase-rarimo-notificator /go/src/gitlab.com/tokend/firebase-rarimo-notificator
