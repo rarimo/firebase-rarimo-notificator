@@ -31,7 +31,7 @@ func (s *service) router() chi.Router {
 	)
 
 	r.Route("/notifications", func(r chi.Router) {
-		r.Route("/{project}", func(r chi.Router) {
+		r.Route("/rarime", func(r chi.Router) {
 			r.Post("/", handlers.SendRariMeNotification)
 		})
 
