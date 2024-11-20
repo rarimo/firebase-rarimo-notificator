@@ -1,0 +1,15 @@
+log:
+  level: debug
+  disable_sentry: true
+
+listener:
+  addr: :8080
+
+cop:
+  disabled: true
+  service_name: firebase-rarimo-notificator
+  service_port: 80
+
+admin_sdk:
+  rarime: "firebaseKeys/rariMe.json"
+  united-space: "firebaseKeys/unitedSpace.json"

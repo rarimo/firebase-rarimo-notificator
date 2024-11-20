@@ -1,0 +1,30 @@
+type: object
+properties:
+  topic:
+    type: string
+    description: Topic of the notification
+  type:
+    type: string
+    description: Type of the notification
+  title:
+    type: string
+    description: Title of the notification
+  description:
+    type: string
+    description: Description of the notification
+  content:
+    type: string
+    description: Content of the notification (optional)
+  target:
+    type: string
+    enum:
+      - ios
+      - android
+      - ios-and-android
+    description: Target platform for the notification
+required:
+  - topic
+  - type
+  - title
+  - description
+  - target
